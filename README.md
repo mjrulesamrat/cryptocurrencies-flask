@@ -5,10 +5,8 @@
 
 > Install requirements.txt
 
+Run app with below command
 > flask run
 
-> open localhost:5000
-
-## Third-Parties
-
-- https://github.com/ccxt/ccxt
+app is now running at
+> http://localhost:5000

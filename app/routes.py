@@ -1,3 +1,4 @@
+from flask import render_template
 from app import app
 
 @app.route('/')
@@ -8,4 +9,8 @@ def index():
     the function
     :return: Greetings
     """
-    return "Hello, World!"
+    data = {
+        'greeting': 'Welcome to Flask meetup :)'
+    }
+    return render_template('index.html', title="Hello Y'all",
+                           data=data)

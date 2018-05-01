@@ -4,16 +4,19 @@
     {% block title %}
         <title>Overwrite this one</title>
     {% endblock title %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-<!--Navigation for all pages-->
-<div>Navigate:
-    <a href="/index">Home</a> |
-    <a href="/details">Details</a>
-</div>
-<hr>
-{% block content %}
-    <h1>Base body content</h1>
-{% endblock content %}
+    <div class="container">
+        <!--Navigation for all pages-->
+        <div>Navigate:
+            <a href="/index" class="btn btn-light">Home</a> |
+            <a href="/details" class="btn btn-light">Details</a>
+        </div>
+        <hr>
+        {% block content %}
+            <h1>Base body content</h1>
+        {% endblock content %}
+    </div>
 </body>
 </html>

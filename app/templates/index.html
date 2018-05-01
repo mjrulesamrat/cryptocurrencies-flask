@@ -10,7 +10,9 @@
     <h1>{{ data.greeting }}!</h1>
 
     <h2>Looping over data:</h2>
-    <table>
+    <table class="table">
+        <td>Key</td>
+        <td>Value</td>
         {% for key, value in data.items() %}
             <tr>
                 <td>{{key}}</td>

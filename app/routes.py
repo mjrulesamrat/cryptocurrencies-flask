@@ -14,3 +14,14 @@ def index():
         'greeting': 'Welcome to Flask meetup :)'
     }
     return render_template('index.html', data=data)
+
+
+@app.route('/details')
+def details():
+    """
+    more details page
+    """
+    data = {
+        'message': "I love open-source technologies",
+    }
+    return render_template('details.html', data=data)

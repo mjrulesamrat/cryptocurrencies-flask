@@ -10,7 +10,7 @@ def index():
     :return: Greetings
     """
     data = {
+        'title': "Hello Y'all",
         'greeting': 'Welcome to Flask meetup :)'
     }
-    return render_template('index.html', title="Hello Y'all",
-                           data=data)
+    return render_template('index.html', data=data)

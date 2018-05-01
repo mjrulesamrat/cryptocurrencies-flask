@@ -1,20 +1,17 @@
-<html>
-    <head>
-        {% if data.title %}
-            <title>{{ data.title }}</title>
-        {% endif %}
-    </head>
-    <body>
-        <h1>{{ data.greeting }}!</h1>
+{% extends 'base.html' %}
 
-        <h2>Looping over data:</h2>
-        <table>
-            {% for key, value in data.items() %}
-                <tr>
-                    <td>{{key}}</td>
-                    <td>{{value}}</td>
-                </tr>
-            {% endfor %}
-        </table>
-    </body>
-</html>
+    {% if data.title %}
+        <title>{{ data.title }}</title>
+    {% endif %}
+
+    <h1>{{ data.greeting }}!</h1>
+
+    <h2>Looping over data:</h2>
+    <table>
+        {% for key, value in data.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+        {% endfor %}
+    </table>

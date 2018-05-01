@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
+{% block title %}
     {% if data.title %}
         <title>{{ data.title }}</title>
     {% endif %}
+{% endblock title %}
 
+{% block content %}
     <h1>{{ data.greeting }}!</h1>
 
     <h2>Looping over data:</h2>
@@ -15,3 +18,4 @@
             </tr>
         {% endfor %}
     </table>
+{% endblock content %}

@@ -17,4 +17,4 @@ if __name__ == '__main__':
     def hello_world():
         return 'Single page flask app!'
 
-    myapp.run()
+    myapp.run(host='0.0.0.0')
